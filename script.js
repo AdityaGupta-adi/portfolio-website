@@ -58,3 +58,9 @@ document.body.classList.contains("light-mode")
 ? "🌞"
 : "🌙";
 };
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.querySelector("nav ul");
+
+menuBtn.onclick = () => {
+navMenu.classList.toggle("active");
+};
