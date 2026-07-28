@@ -158,6 +158,7 @@ button:hover{
     line-height:1.8;
     font-size:18px;
 }
+
 .skills{
     padding:80px 10%;
     text-align:center;
@@ -169,26 +170,47 @@ button:hover{
     margin-bottom:40px;
 }
 
-.skill-container{
+.skill{
+    margin:30px auto;
+    max-width:700px;
+}
+
+.skill-info{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:white;
 }
 
-.skill-card{
-    background:#161b22;
-    padding:18px 35px;
-    border-radius:12px;
-    border:1px solid #30363d;
-    transition:0.3s;
-    cursor:pointer;
+.progress{
+    width:100%;
+    height:12px;
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
 }
 
-.skill-card:hover{
-    transform:translateY(-8px);
-    background:#238636;
-} 
+.progress-bar{
+    height:100%;
+    width:0;
+    border-radius:20px;
+    background:linear-gradient(90deg,#58a6ff,#7c3aed);
+    animation:fillBar 2s forwards;
+}
+
+.html{width:95%;}
+.css{width:90%;}
+.js{width:85%;}
+.python{width:80%;}
+.java{width:75%;}
+
+@keyframes fillBar{
+    from{
+        width:0;
+    }
+}
+
 .projects{
     padding:80px 10%;
     text-align:center;
