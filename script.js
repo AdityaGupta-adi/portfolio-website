@@ -86,3 +86,12 @@ document.addEventListener("mousemove",(e)=>{
 glow.style.left = e.clientX + "px";
 glow.style.top = e.clientY + "px";
 });
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").classList.add("hide");
+
+},1200);
+
+});
