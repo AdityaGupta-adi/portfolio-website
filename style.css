@@ -742,3 +742,32 @@ color:#111 !important;
     width:200px;
     margin:auto;
 }
+
+.github{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.github h2{
+    font-size:40px;
+    color:#58a6ff;
+    margin-bottom:40px;
+}
+
+.github-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.github-container img{
+    width:480px;
+    max-width:100%;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.github-container img:hover{
+    transform:translateY(-8px);
+}
