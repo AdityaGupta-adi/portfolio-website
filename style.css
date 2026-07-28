@@ -915,3 +915,37 @@ body.light-mode .certificate-card{
     color:#111;
     border:1px solid #ddd;
 }
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:70px 10%;
+text-align:center;
+}
+
+.stat-box{
+background:#161b22;
+padding:25px;
+border-radius:15px;
+min-width:170px;
+border:1px solid #30363d;
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-8px);
+border-color:#58a6ff;
+}
+
+.stat-box h2{
+font-size:40px;
+color:#58a6ff;
+margin-bottom:10px;
+}
+
+body.light-mode .stat-box{
+background:#fff;
+border:1px solid #ddd;
+}
