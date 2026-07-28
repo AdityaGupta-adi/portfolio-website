@@ -39,31 +39,48 @@ nav ul li a:hover{
 }
 
 .hero{
-    height:85vh;
+    min-height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding:0 10%;
 }
 
 .hero h1{
-    font-size:55px;
-    margin-bottom:15px;
+    font-size:60px;
+}
+
+.hero span{
+    color:#58a6ff;
 }
 
 .hero h2{
-    color:#58a6ff;
-    margin-bottom:20px;
+    margin-top:20px;
+    color:#238636;
+    min-height:40px;
 }
 
 .hero p{
-    max-width:650px;
-    line-height:1.7;
+    margin:25px 0;
+    font-size:20px;
     color:#c9d1d9;
-    margin-bottom:30px;
 }
+
+.hero-buttons button{
+    padding:15px 30px;
+    margin:10px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.outline{
+    background:transparent;
+    border:2px solid #58a6ff;
+    color:white;
+} 
 
 button{
     padding:14px 32px;
