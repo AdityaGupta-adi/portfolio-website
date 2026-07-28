@@ -874,3 +874,44 @@ color:#c9d1d9;
 font-size:14px;
 color:#8b949e;
 }
+
+.certificates{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.certificates h2{
+    font-size:40px;
+    color:#58a6ff;
+    margin-bottom:40px;
+}
+
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.certificate-card{
+    background:#161b22;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+    border:1px solid #30363d;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+    border-color:#58a6ff;
+}
+
+.certificate-card h3{
+    color:#58a6ff;
+    margin-bottom:10px;
+}
+
+body.light-mode .certificate-card{
+    background:#ffffff;
+    color:#111;
+    border:1px solid #ddd;
+}
