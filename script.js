@@ -64,3 +64,19 @@ const navMenu = document.querySelector("nav ul");
 menuBtn.onclick = () => {
 navMenu.classList.toggle("active");
 };
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = () => {
+    if(document.documentElement.scrollTop > 300){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+};
+
+topBtn.onclick = () => {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+};
