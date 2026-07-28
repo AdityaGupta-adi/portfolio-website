@@ -170,3 +170,26 @@ button:hover{
     color:#c9d1d9;
     margin-bottom:20px;
 }
+.contact{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#58a6ff;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#c9d1d9;
+    margin-bottom:25px;
+}
+
+footer{
+    background:#161b22;
+    padding:25px;
+    text-align:center;
+    color:#8b949e;
+    border-top:1px solid #30363d;
+}
