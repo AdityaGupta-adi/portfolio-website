@@ -48,3 +48,13 @@ const observer = new IntersectionObserver((entries)=>{
 document.querySelectorAll(".hidden").forEach((el)=>{
     observer.observe(el);
 });
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.onclick = () => {
+document.body.classList.toggle("light-mode");
+
+themeBtn.textContent =
+document.body.classList.contains("light-mode")
+? "🌞"
+: "🌙";
+};
