@@ -639,3 +639,36 @@ flex-wrap:wrap;
 .light-mode .secondary-btn{
     color:#fff !important;
 }
+
+.social{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.social h2{
+    color:#58a6ff;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:white;
+    background:#161b22;
+    padding:15px 28px;
+    border-radius:50px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.social-links a:hover{
+    background:#58a6ff;
+    transform:translateY(-5px);
+}
