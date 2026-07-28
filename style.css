@@ -60,11 +60,11 @@ color:#58a6ff;
 .hero{
     min-height:100vh;
     display:flex;
-    padding-top:120px;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:0 10%;
+    gap:50px;
+    padding:120px 8% 60px;
+    flex-wrap:wrap-reverse;
 }
 
 .hero h1{
@@ -79,6 +79,17 @@ color:#58a6ff;
     margin-top:20px;
     color:#238636;
     min-height:40px;
+}
+
+.hero-left{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
 .hero p{
@@ -278,19 +289,17 @@ footer{
 }
 
 .profile-pic{
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #58a6ff;
-margin-bottom:30px;
-box-shadow:0 0 40px rgba(88,166,255,.4);
-transition:.4s;
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #58a6ff;
+    box-shadow:0 0 35px rgba(88,166,255,.6);
+    transition:.4s;
 }
 
 .profile-pic:hover{
-transform:scale(1.05);
-box-shadow:0 0 60px rgba(88,166,255,.7);
+    transform:scale(1.05);
 }
 
 .background-animation{
@@ -397,3 +406,34 @@ background:#7c3aed;
     transform:translateY(0);
 }
 
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding-top:100px;
+    gap:30px;
+}
+
+.hero-left{
+    order:2;
+}
+
+.hero-right{
+    order:1;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+}
