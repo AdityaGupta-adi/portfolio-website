@@ -96,19 +96,34 @@ color:#58a6ff;
 }
 
 .hero-buttons button{
-    padding:15px 30px;
+    padding:16px 34px;
     margin:10px;
     border:none;
     border-radius:50px;
     cursor:pointer;
     font-size:16px;
+    font-weight:bold;
+    background:linear-gradient(135deg,#58a6ff,#7c3aed);
+    color:white;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(88,166,255,.35);
+}
+
+.hero-buttons button:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 15px 40px rgba(88,166,255,.5);
 }
 
 .outline{
-    background:transparent;
+    background:transparent !important;
     border:2px solid #58a6ff;
+    color:#58a6ff;
+}
+
+.outline:hover{
+    background:#58a6ff !important;
     color:white;
-} 
+}
 
 button{
     padding:14px 32px;
@@ -193,17 +208,26 @@ button:hover{
 }
 
 .project-card{
-    width:300px;
-    background:#161b22;
-    border:1px solid #30363d;
-    border-radius:12px;
-    padding:25px;
-    transition:0.3s;
+    width:320px;
+    padding:30px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
 }
 
 .project-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 25px rgba(88,166,255,0.25);
+
+transform:translateY(-12px);
+
+border-color:#58a6ff;
+
+box-shadow:0 20px 50px rgba(88,166,255,.28);
+
 }
 
 .project-card h3{
@@ -320,4 +344,31 @@ transform:translateY(-120vh) scale(1.4);
 opacity:0;
 }
 
+.project-card button{
+
+margin-top:20px;
+
+padding:12px 22px;
+
+border:none;
+
+border-radius:30px;
+
+background:#58a6ff;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
 }
+
+.project-card button:hover{
+
+transform:scale(1.08);
+
+background:#7c3aed;
+
+}
+
