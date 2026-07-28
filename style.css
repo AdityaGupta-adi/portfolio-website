@@ -435,5 +435,51 @@ background:#7c3aed;
     justify-content:center;
     flex-wrap:wrap;
 }
+    
+.about-card{
+width:100%;
+}
 
+}
+
+.about-cards{
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:50px;
+}
+
+.about-card{
+width:300px;
+padding:30px;
+border-radius:20px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.4s;
+}
+
+.about-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#58a6ff;
+
+box-shadow:0 20px 40px rgba(88,166,255,.25);
+
+}
+
+.about-card h3{
+margin-bottom:15px;
+color:#58a6ff;
+}
+
+.about-card p{
+line-height:1.8;
+color:#c9d1d9;
 }
