@@ -80,3 +80,21 @@ button:hover{
     background:#2ea043;
     transform:scale(1.05);
 }
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    color:#58a6ff;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    color:#c9d1d9;
+    line-height:1.8;
+    font-size:18px;
+}
