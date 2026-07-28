@@ -95,3 +95,22 @@ document.getElementById("loader").classList.add("hide");
 },1200);
 
 });
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        const increment = Math.ceil(target / 100);
+
+        if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
