@@ -693,3 +693,41 @@ flex-wrap:wrap;
 #topBtn:hover{
     transform:scale(1.1);
 }
+
+.contact-form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    background:#161b22;
+    color:#fff;
+    border:1px solid #30363d;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:#58a6ff;
+}
+
+.contact-form button{
+    background:linear-gradient(135deg,#58a6ff,#7c3aed);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+}
+
+.contact-form button:hover{
+    transform:scale(1.03);
+}
