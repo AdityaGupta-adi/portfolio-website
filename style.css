@@ -366,6 +366,7 @@ opacity:1;
 transform:translateY(-120vh) scale(1.4);
 opacity:0;
 }
+}
 
 .project-card button{
 
@@ -730,62 +731,6 @@ flex-wrap:wrap;
 
 .contact-form button:hover{
     transform:scale(1.03);
-}
-
-.social{
-    padding:80px 10%;
-    text-align:center;
-}
-
-.social h2{
-    font-size:36px;
-    margin-bottom:30px;
-    color:#58a6ff;
-}
-
-.social-links{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.social-links a{
-    text-decoration:none;
-    color:#fff;
-    background:#161b22;
-    padding:12px 22px;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.social-links a:hover{
-    background:#58a6ff;
-    color:#fff;
-    transform:translateY(-5px);
-}
-
-.social-links{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:25px;
-}
-
-.social-links a{
-    display:inline-block;
-    padding:12px 20px;
-    background:#161b22;
-    color:white;
-    border-radius:25px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.social-links a:hover{
-    background:#58a6ff;
 }
 
 .contact-form{
