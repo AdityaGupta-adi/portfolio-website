@@ -1,4 +1,12 @@
 *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -11,36 +19,56 @@ body{
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#161b22;
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(22,27,34,.65);
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
+
+z-index:999;
 }
 
-nav h2{
-    color:#58a6ff;
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+.logo span{
+color:#58a6ff;
 }
 
 nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
+display:flex;
+gap:30px;
+list-style:none;
 }
 
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
 }
 
-nav ul li a:hover{
-    color:#58a6ff;
+nav a:hover{
+color:#58a6ff;
 }
 
 .hero{
     min-height:100vh;
     display:flex;
+    padding-top:120px;
     justify-content:center;
     align-items:center;
     text-align:center;
