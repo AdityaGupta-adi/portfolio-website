@@ -672,3 +672,24 @@ flex-wrap:wrap;
     background:#58a6ff;
     transform:translateY(-5px);
 }
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    display:none;
+    padding:14px 18px;
+    border:none;
+    border-radius:50%;
+    background:#58a6ff;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(88,166,255,.4);
+    transition:.3s;
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
