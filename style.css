@@ -552,3 +552,57 @@ background:white;
 background:white;
 color:#111;
 }
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav ul{
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#161b22;
+flex-direction:column;
+padding:20px 0;
+display:none;
+}
+
+nav ul.active{
+display:flex;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+gap:40px;
+}
+
+.hero-right{
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.profile-pic{
+width:220px;
+height:220px;
+}
+
+.hero-buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
