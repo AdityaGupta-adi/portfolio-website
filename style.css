@@ -771,3 +771,15 @@ color:#111 !important;
 .github-container img:hover{
     transform:translateY(-8px);
 }
+
+.cursor-glow{
+position:fixed;
+width:220px;
+height:220px;
+background:radial-gradient(circle,rgba(88,166,255,.28),transparent 70%);
+border-radius:50%;
+pointer-events:none;
+transform:translate(-50%,-50%);
+z-index:-1;
+transition:transform .08s linear;
+}
